@@ -75,6 +75,7 @@ Each external process will be uniquely identified by a command-line parameter. T
 - Don't worry about killing Zombies. Let them be. You do not need to implement a multi-connection server. As a result, zoombies are unlikely to be an issue. 
 - The simplest way to start the implementation is to use the sample source code that comes with this repository. Alternatively, you can use any example you find that shows two processes exchanging some message packaged as a C structure (i.e., `struct`). Given an example with two processes communicating via TCP sockets, you just need to extend the example to implement the solution of the assignment. 
 
+## Execution Screenshot
 ### What to submit
 
 `Add/Commit/Push` the source code of your program into the GitHub repository for the assignment. Do not upload executable files or temporary files that result from the compilation process. 
@@ -147,3 +148,49 @@ Open four terminals and in each one run:
 The book is written is a very conversational style that is both enjoyable and accessible. I think you will enjoy reading it. Give it a try if you have time. If you want just to learn about serialization in network communication then read the Section **7.5 Serialization—How to Pack Data** (https://beej.us/guide/bgnet/html/split-wide/slightly-advanced-techniques.html#serialization). 
 
  
+# Submission
+
+## How to compile
+```
+gcc utils.c tcp_server.c -o server
+gcc -o client tcp_client.c utils.c
+```
+
+## How to run
+Open 5 terminals. In terminal 1 run:
+```
+./server
+```
+
+In terminals 2-5 run:
+```
+./client 1 100
+./client 2 200
+./client 3 300
+./client 4 400
+```
+
+## Execution Screenshot
+
+  ## Server
+
+![Execution](og_p1.png)
+![Execution](og_p2.png)
+![Execution](og_p3.png)
+![Execution](og_p4.png)
+
+  ## Client 1
+![Execution](1_p1.png)
+![Execution](1_p2.png)
+  ## Client 2
+![Execution](2_p1.png)
+![Execution](2_p2.png)
+![Execution](2_p3.png)
+  ## Client 3
+![Execution](3_p1.png)
+![Execution](3_p2.png)
+![Execution](3_p3.png)
+![Execution](3_p4.png)
+  ## Client 4
+![Execution](4_p1.png)
+![Execution](4_p4.png)
