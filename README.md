@@ -173,7 +173,7 @@ In terminals 2-5 run:
 ## Execution Screenshot
 
   ## Server
-
+![Execution](3_p1.png)
 ![Execution](og_p1.png)
 ![Execution](og_p2.png)
 ![Execution](og_p3.png)
@@ -187,10 +187,10 @@ In terminals 2-5 run:
 ![Execution](2_p2.png)
 ![Execution](2_p3.png)
   ## Client 3
-![Execution](3_p1.png)
+
 ![Execution](3_p2.png)
 ![Execution](3_p3.png)
 ![Execution](3_p4.png)
   ## Client 4
 ![Execution](4_p1.png)
-![Execution](4_p4.png)
+![Execution](4_p2.png)
